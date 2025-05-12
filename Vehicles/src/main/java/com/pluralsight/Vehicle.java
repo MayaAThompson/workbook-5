@@ -8,6 +8,17 @@ public class Vehicle {
     protected int fuelCapacity; //Liters
     protected int topSpeed; //Km H
 
+    public Vehicle() {
+    }
+
+    public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity, int topSpeed) {
+        this.color = color;
+        this.numberOfPassengers = numberOfPassengers;
+        this.cargoCapacity = cargoCapacity;
+        this.fuelCapacity = fuelCapacity;
+        this.topSpeed = topSpeed;
+    }
+
     //region getters and setters
     public String getColor() {
         return color;

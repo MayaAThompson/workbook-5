@@ -6,22 +6,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Moped vespa = new Moped();
-        Car skyline = new Car();
-        SemiTruck mac = new SemiTruck();
-        Hovercraft coolerThanYou = new Hovercraft();
-
-        vespa.setFuelCapacity(4);
-        vespa.setColor("Red");
-
-        skyline.setTopSpeed(300);
-        skyline.setColor("Midnight Purple");
-
-        mac.setCargoCapacity(110);
-        mac.setColor("White");
-
-        coolerThanYou.setNumberOfPassengers(4);
-        coolerThanYou.setColor("Black");
+        Moped vespa = new Moped("Red", 2, 0, 4, 30, false);
+        Car skyline = new Car("Midnight Purple", 4, 8, 64, 300, 4);
+        SemiTruck mac = new SemiTruck("White", 2, 110, 150, 150, true);
+        Hovercraft coolerThanYou = new Hovercraft("Black", 1, 2, 45, 100, true);
 
         ArrayList<Vehicle> vehicles = new ArrayList<>();
         vehicles.add(vespa);
